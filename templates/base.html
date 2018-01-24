@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flasky</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename="styles.css")}}">
+    <script src="{{ url_for('static', filename="app.js")}}" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Flasky</h1>
+        <p>A Basic Flask Demo app for Dynamic Web Development II</p>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="flex-wrapper container">
+      <main>
+        {% block main %}
+        {% endblock %}
+      </main>
+
+      <aside>
+        {% block sidebar %}
+        {% endblock %}
+      </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy 2017, Flasky Inc.
+        </div>
+    </footer>
+  </body>
+</html>

@@ -2,11 +2,12 @@ import os
 from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
+
 @app.route("/")
-@app.route("/<myname>")
-def hello(myname='person'):
-    return "Hello {0}".format(myname)
-    # return render_template('hello.html', name=myname)
+@app.route("/<some_name>")
+def hello(some_name='person'):
+    return "Hello {0}".format(some_name)
+    # return render_template('hello.html', name=some_name)
 
 
 if __name__ == "__main__":

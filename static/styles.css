@@ -18,7 +18,10 @@ header {
   background-color: var(--primary-color);
   padding: 25px;
   color: #FFFFFF;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {

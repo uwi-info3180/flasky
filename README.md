@@ -8,7 +8,7 @@ To Run this application, ensure you have installed Python 3 and follow these ste
 2. Change to the directory (e.g. `cd flasky`)
 3. Create a virtual environment using `python -m venv venv`. In some cases you may need to
 use `python3 -m venv venv`. If you are using Cloud9 then run `python3.5 -m venv venv`.
-4. Activate the virtual environment using `source venv/bin/activate`
+4. Activate the virtual environment using `source venv/bin/activate` or on Windows use `.\venv\Scripts\activate`.
 5. Run `pip install -r requirements.txt`
 6. Once that is finished start the development server using `python app.py` (in some cases `python3 app.py` or `python3.5 app.py` on C9.
 7. Next, browse to http://localhost:8080/ , you should see **Hello person** displayed.

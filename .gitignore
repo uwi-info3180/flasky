@@ -4,6 +4,7 @@ Thumbs.db
 
 *.py[cod]
 *$py.class
+__pycache__
 
 # virtualenv
 .venv/
@@ -11,3 +12,6 @@ venv/
 
 # PyCharm
 .idea
+
+# VS Code
+.vscode

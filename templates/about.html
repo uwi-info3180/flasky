@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html'%}
+
+{% block main %}
+    <h2>About Flask</h2>
+    <p>Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions. ~ <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)">Wikipedia</a></p>
+{% endblock%}
+
+{% block sidebar %}
+    <h2>Social Media</h2>
+    <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+    </ul>
+{% endblock%}

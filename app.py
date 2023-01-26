@@ -4,8 +4,11 @@ app = Flask(__name__)
 
 
 @app.route("/")
-@app.route("/<some_name>")
-def hello(some_name='person'):
+def index():
+    return "This is my homepage"
+
+@app.route("/hello/<some_name>")
+def hello(some_name='John Doe'):
     # return "Hello {0}".format(some_name)
     return render_template('hello.html', name=some_name)
 

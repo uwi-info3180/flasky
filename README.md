@@ -2,7 +2,7 @@
 
 A trivial Flask application that displays your name when it is added to the URL.
 
-# Setup
+## Setup
 
 To Run this application, ensure you have installed Python 3 and follow these steps:
 
